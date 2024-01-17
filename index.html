@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to speech</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="title">
+        <div>Text to speech</div>
+        <div>Speech to text</div>
+    </div>
+
+    <div class="content">
+
+        <!-- Options -->
+        <div class="options">
+            <select class="language">
+                <option value="ar-SA">العربية</option>
+                <option value="en-US">English</option>
+            </select>
+            <div class="toSpeech">
+                <button class="btnPrimary" id="speech">To Text</button>
+            </div>
+        </div>
+
+        <div class="textField">
+            <textarea class="text" id="text" placeholder="The generated text will be here" readonly></textarea>
+        </div>
+
+        <div class="textContent">
+            <!-- Options -->
+            <div class="options">
+                <select class="readingLang">
+                    <option value="ar">العربية</option>
+                    <option value="0">Default</option>
+                </select>
+                <div class="speak">
+                    <button class="btnSecondary" id="speak">Read Text</button>
+                    <button class="btnDanger" id="stop">Stop Reading</button>
+                </div>
+            </div>
+            <!-- Use this text for English -->
+            <div class="textToSpeech">
+                <textarea class="textarea"></textarea>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
