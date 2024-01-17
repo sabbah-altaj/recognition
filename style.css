@@ -80,6 +80,7 @@ select {
 
   .textToSpeech {
     textarea {
+        resize: vertical !important;
      /* height: 150px; */
     }
   }
